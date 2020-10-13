@@ -1,0 +1,40 @@
+.tmp/
+
+# dependencies
+node_modules/
+
+# testing
+coverage/
+
+# production
+build/
+lib/
+public/
+
+# Logs
+*.log
+
+# package archive file
+**/*.tgz
+
+# Runtime
+*.DS_Store
+
+# WebStorm
+.idea
+
+*.js
+*.rej
+
+.ignore
+
+config/default.yml
+
+# vscode plug
+cSpell.json
+
+!.eslintrc.js
+Dockerfile
+
+package-lock.json
+!babel.config.js

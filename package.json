@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@octokit/webhooks": "^7.12.2"
+  }
+}
