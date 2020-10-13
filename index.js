@@ -7,7 +7,7 @@ const webhooks = new Webhooks({
 
 webhooks.on("*", ({ id, name, payload }) => {
   console.log(name, "event received");
-childProcess.spawn('sh', './deploy.sh')
+childProcess.spawn('sh', ['./deploy.sh'])
 });
 
 require("http").createServer(webhooks.middleware).listen(6000);
