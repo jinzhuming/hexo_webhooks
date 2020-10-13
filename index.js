@@ -1,7 +1,8 @@
 const { Webhooks } = require("@octokit/webhooks");
 const childProcess  = require("child_process");
 const webhooks = new Webhooks({
-  secret: "mysecret",
+  secret: "mysecret193",
+  path:'/webhooks'
 });
 
 webhooks.on("*", ({ id, name, payload }) => {
@@ -9,4 +10,4 @@ webhooks.on("*", ({ id, name, payload }) => {
 childProcess.spawn('sh', './deploy.sh')
 });
 
-require("http").createServer(webhooks.middleware).listen(6666);
+require("http").createServer(webhooks.middleware).listen(6000);
