@@ -23,7 +23,6 @@ public/
 # WebStorm
 .idea
 
-*.js
 *.rej
 
 .ignore
